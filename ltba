@@ -59,8 +59,8 @@
     {
       "_reference":  "https://www.ourairports.com/airports/LTBA/pilot-info.html",
       "name":         ["35R", "17L"],
-      "name_offset":  [[1, 0], [0, 0.4]],
-      "end":    [ ["N40.971388", "E28.815833", "100ft"], ["N40.996333", "E28.808500", "157ft"] ],
+      "name_offset":  [[0, 0], [0, 0.4]],
+      "end":    [ ["N40.969456", "E28.809469", "100ft"], ["N40.996358", "E28.808525", "157ft"] ],
       "angle":        354,
       "length":       3,
       "ils":          [true, true]
@@ -83,62 +83,75 @@
     }
   ],
   "sids": {
-    "NORTH": {
-      "icao": "NORTH",
-      "name": "NORTH",
+    "YAA1": {
+      "icao": "YAA1",
+      "name": "Yalova One",
       "rwy": {
-        "35L": ["NORTH"],
-        "35R": ["NORTH"],
-        "17L": ["NORTH"],
-        "17R": ["NORTH"],
-        "5" : ["NORTH"],
-        "23" : ["NORTH"]
+        "35L": ["BKZ", "YAA", "BRY"],
+        "35R": ["BKZ", "YAA", "BRY"],
+        "17L": ["BKZ", "YAA", "BRY"],
+        "17R": ["BKZ", "YAA", "BRY"],
+        "5" : ["BKZ", "YAA", "BRY"],
+        "23" : ["BKZ", "YAA", "BRY"]
       },
-      "draw": [["LTBA","NORTH"]]
+      "draw": [["BRZ","YAA","BRY"]]
     },
-    "EAST": {
-      "icao" : "EAST",
-      "name" : "EAST",
+    "ERTAS1": {
+      "icao" : "ERTAS1",
+      "name" : "Ertas One",
       "rwy": {
-        "35L": ["EAST"],
-        "35R": ["EAST"],
-        "17L": ["EAST"],
-        "17R": ["EAST"],
-        "5" : ["EAST"],
-        "23" : ["EAST"]
+        "35L": ["BKZ", "ERTAS"],
+        "35R": ["BKZ", "ERTAS"],
+        "17L": ["BKZ", "ERTAS"],
+        "17R": ["BKZ", "ERTAS"],
+        "5" : ["BKZ", "ERTAS"],
+        "23" : ["BKZ", "ERTAS"]
       },
-      "draw": [["LTBA","EAST"]]
+      "draw": [["BKZ","ERTAS"]]
     },
-    "SOUTH": {
-      "icao": "SOUTH",
-      "name": "SOUTH",
+    "BIG1": {
+      "icao": "BIG1",
+      "name": "Biga One",
       "rwy": {
-        "35L": ["SOUTH"],
-        "35R": ["SOUTH"],
-        "17L": ["SOUTH"],
-        "17R": ["SOUTH"],
-        "5" : ["SOUTH"],
-        "23" : ["SOUTH"]
+        "35L": ["KOFUN", "CEK", "TURKO"],
+        "35R": ["KOFUN", "CEK", "TURKO"],
+        "17L": ["KOFUN", "CEK", "TURKO"],
+        "17R": ["KOFUN", "CEK", "TURKO"],
+        "5" : ["KOFUN", "CEK", "TURKO"],
+        "23" : ["KOFUN", "CEK", "TURKO"]
       },
-      "draw": [["LTBA","SOUTH"]]
+      "draw": [["KOFUN","CEK","TURKO"]]
     },
-    "WEST": {
-      "icao": "WEST",
-      "name": "WEST",
+    "CRL1": {
+      "icao": "CRL1",
+      "name": "Corlu One",
       "rwy": {
-        "35L": ["WEST"],
-        "35R": ["WEST"],
-        "17L": ["WEST"],
-        "17R": ["WEST"],
-        "5" : ["WEST"],
-        "23" : ["WEST"]
+        "35L": ["KOFUN", "CRL"],
+        "35R": ["KOFUN", "CRL"],
+        "17L": ["KOFUN", "CRL"],
+        "17R": ["KOFUN", "CRL"],
+        "5" : ["KOFUN", "CRL"],
+        "23" : ["KOFUN", "CRL"]
       },
-      "draw": [["LTBA","WEST"]]
+      "draw": [["KOFUN","CRL"]]
+    },
+    "FENER1": {
+      "icao": "FENER1",
+      "name": "Fener One",
+      "rwy": {
+        "35L": ["KOFUN", "FENER"],
+        "35R": ["KOFUN", "FENER"],
+        "17L": ["KOFUN", "FENER"],
+        "17R": ["KOFUN", "FENER"],
+        "5" : ["KOFUN", "FENER"],
+        "23" : ["KOFUN", "FENER"]
+      },
+      "draw": [["KOFUN","FENER"]]
     }
   },
   "departures": {
     "destinations": [
-       "NORTH", "EAST", "SOUTH", "WEST"
+       "YAA1", "ERTAS1", "BIG1", "CRL1", "FENER1"
     ],
     "type": "random",
     "frequency": 3.5,
